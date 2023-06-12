@@ -15,7 +15,7 @@ class SizeReportingWidget extends StatefulWidget {
 }
 
 class _SizeReportingWidgetState extends State<SizeReportingWidget> {
-  final _widgetKey = GlobalKey();
+  GlobalKey _widgetKey = GlobalKey();
   Size? _oldSize;
 
   @override
