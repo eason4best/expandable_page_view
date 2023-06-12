@@ -15,7 +15,8 @@ class SizeReportingWidget extends StatefulWidget {
 }
 
 class _SizeReportingWidgetState extends State<SizeReportingWidget> {
-  GlobalKey _widgetKey = GlobalKey();
+  final GlobalKey _widgetKey =
+      GlobalObjectKey(DateTime.now().toIso8601String());
   Size? _oldSize;
 
   @override
